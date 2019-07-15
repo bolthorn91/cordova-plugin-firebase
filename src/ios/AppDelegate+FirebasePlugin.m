@@ -58,6 +58,7 @@
         
         // configure FIRApp with options
         [FIRApp configureWithOptions:options];
+        [FIRDatabase database].persistenceEnabled = YES;
     }
     
     // no .plist found, try default App
