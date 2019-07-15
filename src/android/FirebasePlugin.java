@@ -76,7 +76,7 @@ public class FirebasePlugin extends CordovaPlugin {
             public void run() {
                 Log.d(TAG, "Starting Firebase plugin");
                 FirebaseApp.initializeApp(context);
-                FirebaseDatabase.getInstance().setPersistenceEnabled(true);
+                FirebaseApp.getInstance().setPersistenceEnabled(true);
                 mFirebaseAnalytics = FirebaseAnalytics.getInstance(context);
                 mFirebaseAnalytics.setAnalyticsCollectionEnabled(true);
                 if (extras != null && extras.size() > 1) {
